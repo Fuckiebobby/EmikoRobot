@@ -82,13 +82,20 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*Hello {} !*
-✪ I'm a Group management bot [✨](https://telegra.ph/file/1ba30d3fabf8eeed99f96.jpg)
-────────────────────────
-× *Uptime:* `{}`
-× `{}` *users, across* `{}` *chats.*
-────────────────────────
-✪ Hit /help to see my available commands.
+*𝐇ᴇʏ 𝐓ʜᴇʀᴇ...!   {} !*
+✪ I'm a Group management bot [✨](https://telegra.ph/file/b62e639212e9d255fc816.jpg)
+
+   『 𝐈ᴀᴍ 𝐂ᴜᴛɪᴇ x ʀᴏʙᴏᴛ🧚‍♀️ 』
+
+𝐁ᴀᴇ 𝐈ᴍ 𝐀 𝐏ᴏᴡᴇʀғᴜʟ 𝐆ʀᴏᴜᴘ 𝐌ᴀɴᴀɢᴇᴍᴇɴᴛ 𝐁ᴏᴛ 🤖 𝐈ᴍ 𝐁ᴜɪʟᴛ 𝐓ᴏ 𝐇ᴇʟᴘ 𝐘ᴏᴜʀ 𝐆ʀᴏᴜᴘ 𝐄ᴀsɪʟʏ😜
+
+┏ /start
+┃sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ
+┣/help
+┃ᴘᴍ's ʏᴏᴜ ᴛʜɪs ᴍᴇssᴀɢᴇ.
+┗ /settings
+╭─⊸➢ᴡɪʟʟ ʀᴇᴅɪʀᴇᴄᴛ ʏᴏᴜ ᴛᴏ ᴘᴍ, ᴡɪᴛʜ ᴀʟʟ ᴛʜᴀᴛ ᴄʜᴀᴛ's sᴇᴛᴛɪɴɢs.
+╰─⊸➢ᴊᴏɪɴ ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ ᴀɴᴅ ʀᴇᴘᴏʀᴛ ᴛʜᴇ ᴇʀʀᴏʀꜱ @love_u_bobby 🎀.
 """
 
 buttons = [
@@ -103,7 +110,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Me To Your Group ➗", url=f"t.me/{bu}?startgroup=new"),
+            text="💥𝐀ᴅᴅ 𝐌ᴇ 𝐓ᴏ 𝐘ᴏᴜʀ 𝐆ʀᴏᴜᴘ💥", url=f"t.me/{bu}?startgroup=new"),
     ],
 ]
 
@@ -461,24 +468,24 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="sena-ex", url="https://github.com/kennedy-ex"),
-                    InlineKeyboardButton(text="TheHamkerCat", url="https://github.com/TheHamkerCat"),
+                    InlineKeyboardButton(text="sena-x", url="https://github.com/kennedy-ex"),
+                    InlineKeyboardButton(text="𝐀ʙᴏᴜᴛ", url="https://t.me/aboutbobby"),
                  ],
                  [
-                    InlineKeyboardButton(text="Feri", url="https://github.com/FeriEXP"),
-                    InlineKeyboardButton(text="riz-ex", url="https://github.com/riz-ex"),
+                    InlineKeyboardButton(text="👿ᴄʟᴜʙ👿", url="https://t.me/+TyJUMuYY5Eg0ZmVl"),
+                    InlineKeyboardButton(text="😈sᴀᴍʙᴀᴠᴀᴍ👿", url="https://t.me/+IsrsUcW6cMoyN2Rl"),
                  ],
                  [
-                    InlineKeyboardButton(text="Anime Kaizoku", url="https://github.com/animekaizoku"),
-                    InlineKeyboardButton(text="TheGhost Hunter", url="https://github.com/HuntingBots"),
+                    InlineKeyboardButton(text="😈ғᴇᴅᴇʀᴀᴛɪᴏɴ👿", url="https://t.me/tmcomrade_fed"),
+                    InlineKeyboardButton(text="😈𝐆ʀᴏᴜᴘ😈", url="https://t.me/kadalora_kadalai"),
                  ],
                  [
-                    InlineKeyboardButton(text="Inuka Asith", url="https://github.com/inukaasith"),
-                    InlineKeyboardButton(text="Noob-Kittu", url="https://github.com/noob-kittu"),
+                    InlineKeyboardButton(text="🤩𝐒ᴜᴘᴘᴏʀᴛ🤩", url="https://t.me/tamil_comrades_x"),
+                    InlineKeyboardButton(text="😈𝐃ᴇᴀʀ 𝐂ᴏᴍʀᴀᴅᴇ😈", url="https://t.me/tamil_comrades_x"),
                  ],
                  [
-                    InlineKeyboardButton(text="Queen Arzoo", url="https://github.com/QueenArzoo"),
-                    InlineKeyboardButton(text="Paul Larsen", url="https://github.com/PaulSonOfLars"),
+                    InlineKeyboardButton(text="😻𝐒ᴛɪᴄᴋᴇʀs😻", url="https://t.me/bobbyfactory"),
+                    InlineKeyboardButton(text="💞𝐕ɪʙᴇᴢ💞", url="https://t.me/BOBBYXWORLD"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
@@ -749,7 +756,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1866066766:
+        if OWNER_ID != 5299049743:
             update.effective_message.reply_text(
                 "I'm free for everyone ❤️ If you wanna make me smile, just join"
                 "[My Channel]({})".format(DONATION_LINK),
